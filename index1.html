@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h4>
+<pre>
+    index.get('/', (req, res) => res.send('localhost:3001'));
+    index.get('/p1', (req, res) => {res.sendFile(path.resolve('index1.html'))});
+    index.get('/p2', (req, res) => res.send('<h2 style="border: 2px solid black">Page  p2<h2>'));
+    index.get('/p3', (req, res) => res.send('<h2 style="border: 2px solid black">Page  p3<h2>'));
+        index.get('/p4', (req, res) => res.send({page:connection}));
+        index.get('/p5', (req, res) => {res.sendFile(path.resolve('index.html'))});
+        index.get('/p6', (req, res) => res.send({"page":connection}));
+        index.get('/p66', (req, res) => res.json({"page":connection}));
+</pre>
+</h4>
+
+
+</body>
+</html>
